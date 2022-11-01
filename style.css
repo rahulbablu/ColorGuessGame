@@ -1,0 +1,78 @@
+body,html{
+    margin:0;
+    background-color: rgb(26, 24, 24);
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Poor Story', cursive;
+}
+
+#nav1{
+   background-color: rgb(72, 189, 235);
+   margin: 0;
+}
+h2{
+    margin: 0;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    text-shadow: 2px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+h2 span{
+    font-size: 2.2em;
+}
+
+.nav2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+}
+
+.mode{
+    display: flex;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    padding: 0;
+    margin: 0;
+    transition: 300ms;
+}
+
+.box:hover{
+    transform: scale(0.96);
+}
+
+.boxes{
+    max-width: 650px;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+#easy{
+    font-weight: bolder;
+}
+
+#hard{
+    text-decoration: line-through;
+}
+
+#hard:hover , #easy:hover, #result, #playAgain:hover{
+    transform:scale(1.6);
+}
+
+#hard , #easy, #result, #playAgain{
+    font-size: 1em;
+    padding: 0 10px;
+}
+
+#result{
+    padding-left: 0.55em;
+}
+
